@@ -34,6 +34,11 @@ class Register extends React.Component
         this.handle_password_correction();
     }
 
+    handle_password_input = async(event) => {
+        await this.setState({password: event.currentTarget.value});
+        this.handle_password_correction();
+    }
+
     handle_password_correction = () => {
         if(this.state.password !== this.state.confirm_password) { return this.setState({password_error: true}) };
         this.setState({password_error: false});
@@ -44,10 +49,10 @@ class Register extends React.Component
             <div className='registerpage'>
                 <br />
                 <h2>Register</h2>
-                <input type="text" required placeholder='Login' onChange={(event)=> this.setState({username: event.currentTarget.value, username_error: false})} />
+                <input type="text" placeholder='Login' onChange={(event)=> this.setState({username: event.currentTarget.value, username_error: false})} />
                 { this.state.username_error ? (<p className='error'>Username is not valid or already exists!</p>) : "" }
-                <input type="password" required placeholder='Password' onChange={(event)=> this.setState({password: event.currentTarget.value})}/>
-                <input type="password" required placeholder='Confirm Password' onChange={(event) => this.handle_password_confirm(event) } />
+                <input type="password" placeholder='Password' onChange={ (event) => this.handle_password_input(event) }/>
+                <input type="password" placeholder='Confirm Password' onChange={ (event) => this.handle_password_confirm(event) } />
                 { this.state.password_error ? (<p className='error'>Passwords don't match!</p>) : "" }
                 <input type="submit" value="Register" onClick={() => this.handle_register_button() }/>
             </div>

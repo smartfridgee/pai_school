@@ -19,7 +19,6 @@ class Login extends React.Component
     }
 
     handle_login_button = () => {
-        console.log(this.props.data);
         if( !(this.props.data.accounts.map(user => { return user["username"] })).includes(this.state.username) ) { return this.setState({username_error: true}); }
         let account = this.props.data.accounts.find(user => user.username === this.state.username);
         if(account.password !== this.state.password) { return this.setState({password_error: true}); }
