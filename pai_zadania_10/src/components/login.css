@@ -1,0 +1,23 @@
+.loginpage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+    font-family: Arial;
+}
+
+.loginpage input[type=text], input[type=password]{
+    padding: 0.3em;
+}
+
+.loginpage input[type=button] {
+    padding: 0.3em;
+    width: 5em;
+}
+
+.loginpage .error {
+    color: red;
+    font-size: .85em;
+    font-weight: bold;
+}

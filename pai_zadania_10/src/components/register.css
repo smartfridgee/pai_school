@@ -1,0 +1,23 @@
+.registerpage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+    font-family: Arial;
+}
+
+.registerpage input[type=text], input[type=password]{
+    padding: 0.3em;
+}
+
+.registerpage input[type=button] {
+    padding: 0.3em;
+    width: 5em;
+}
+
+.registerpage .error {
+    color: red;
+    font-size: .85em;
+    font-weight: bold;
+}

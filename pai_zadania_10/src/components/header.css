@@ -1,0 +1,63 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 60px;
+    width: 100%;
+    background: #696969;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.containerright {
+    position: relative;
+    margin-left: auto;
+    height: 100%;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerleft {
+    position: absolute;
+    height: 100%;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerbutton {
+    width: 100px;
+    height: 30px;
+    margin: 5px;
+}
+
+.userbox {
+    background-color: black;
+}
+
+.userlogo {
+    width: 48px;
+    height: 48px;
+    border: 0 solid transparent;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.username {
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.userrole {
+    color: white;
+    font-style: italic;
+    font-size: medium;
+    margin-top: 0;
+    text-align: center;
+}
