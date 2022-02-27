@@ -20,7 +20,7 @@ class ToggleButton extends React.Component {
 
     render = () => {
         return(
-            <button key={this.props.name} onClick={this.handleButtonClick} className={this.state.is_toggled ? 'green' : ""}>{this.props.name}</button>
+            <button onClick={this.handleButtonClick} className={this.state.is_toggled ? 'green' : ""}>{this.props.name}</button>
         )
     }
 }
