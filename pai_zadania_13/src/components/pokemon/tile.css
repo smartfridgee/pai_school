@@ -1,0 +1,19 @@
+.tile {
+    width: 18em;
+    background: rgb(235, 235, 235);
+    padding: 1em;
+    border-radius: 1em;
+}
+
+.tile img {
+    width: 100%;
+}
+
+.tile h2 {
+    padding: 0.2em;
+    margin: 0;
+    margin-top: 1em;
+    background: rgb(212, 212, 212);
+    border-radius: 0.5em;
+    font-weight: 600;
+}
