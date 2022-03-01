@@ -1,0 +1,43 @@
+.chat_view_container > .bubble {
+    border-radius: 1em;
+    padding: 0.25em 0.75em;
+    margin: 0.0625em;
+    max-width: 50%;
+}
+
+.chat_view_container > .bubble.sender {
+    background-color: yellow;
+    align-self: flex-start;
+    
+}
+
+.chat_view_container > .bubble.owner {
+    background-color: blue;
+    align-self: flex-end;
+}
+
+.chat_view_container > .bubble.sender.first {
+    border-bottom-left-radius: 0.1em;
+}
+
+.chat_view_container > .bubble.sender.middle {
+    border-bottom-left-radius: 0.1em;
+    border-top-left-radius: 0.1em;
+}
+
+.chat_view_container > .bubble.sender.last {
+    border-top-left-radius: 0.1em;
+}
+
+.chat_view_container > .bubble.owner.first {
+    border-bottom-right-radius: 0.1em;
+}
+
+.chat_view_container > .bubble.owner.middle {
+    border-bottom-right-radius: 0.1em;
+    border-top-right-radius: 0.1em;
+}
+
+.chat_view_container > .bubble.owner.last {
+    border-top-right-radius: 0.1em;
+}
