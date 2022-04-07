@@ -1,0 +1,20 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+  margin-top: 3em;
+}
+
+th { 
+  width: 10em;
+}
+
+td {
+  text-align: center;
+}
+
+img {
+  height: 8em;
+}

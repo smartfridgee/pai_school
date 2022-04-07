@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+input {
+    width: 28rem;
+    font-size: 1.1rem;
+    padding: 0.2em 0.5em;
+    border-radius: 0.5em;
+    border: 2px solid rgb(190, 190, 190);
+    outline: none;
+}
+
+.sorting, .filtering {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5em;
+}
+
+button {
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 0.3rem 0.8rem;
+    border-radius: 0.5rem;
+    transition: background 100ms;
+    background: lightgray;
+}
+
+button:hover {
+    background: rgb(160, 160, 160);
+}
+
+button:active {
+    background: #00A36C !important;
+}
+
+.green {
+    background: #00A36C !important;
+    color: white;
+}
