@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="main.js"></script>
+    <style>
+        .top {
+            display: flex;
+            gap: 0.25em;
+        }
+        .counting > * {
+            padding-inline: 0.25em;
+        }
+        .box {
+            height: 5em;
+            width: max-content;
+            border: 2px solid black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1em;
+        }
+        .box-container {
+            display: flex;
+            gap: 0.5em;
+            width: 100%;
+            flex-wrap: wrap;
+        }
+        .check {
+            display: none;
+        }
+        .visible {
+            display: inherit;
+        }
+        .ct1, .ct2, .ct3 {
+            width: 5em;
+            border: 1px solid black;
+            padding: 1em;
+            margin: 10px;
+        }
+        .style1 {
+            border: 5px dashed purple !important;
+            font-size: 2em;
+            text-align: right;
+            width: 17em;
+        }
+        .style2 {
+            border: none !important;
+            background-color: green;
+            box-shadow: 3px 3px 5px purple;
+            color: white;
+            font-weight: bold;
+        }
+        .style3 {
+            border: 3px dotted dodgerblue !important;
+            width: 10em !important;
+            text-align: center;
+            transition: rotate(20deg);
+            width: 20em;
+        }
+        .style4 {
+            border: none !important;
+            box-shadow: -5px 10px 15px 5px orange;
+            text-decoration: line-through;
+            font-size: 1.5em;
+            color: magenta;
+        }
+        .style5 {
+            border-radius: 20%;
+            font-size: 4.5em;
+            background-color: red;
+            color: white;
+            width: 15em;
+        }
+        .style6 {
+            letter-spacing: 2em;
+            background-color: yellow;
+            color: brown;
+        }
+        .style7 {
+            border: none !important;
+            text-shadow: 10px 10px 10px purple;
+            font-family: 'Comic Sans MS';
+            text-decoration: underline;
+            width: 5em;
+            font-size: 3em;
+            letter-spacing: 4em;
+        }
+    </style>
+</head>
+<body>
+    <div class="shopping-list">
+        <h1>My shopping list</h1>
+        Enter a new item: <input type="text" id="shopping_input"> <button onclick="addNewShoppingItem()">Add item</button>
+        <ul id="shopping">
+        </ul>
+    </div>
+    <hr>
+    <div class="text-joiner">
+        <div class="top">
+            <input type="text" id="joiner_input">
+            <button onclick="addNewBox()">Dodawanie</button>
+            <button onclick="removeBoxes()">Usuwanie</button>
+            <div class="counting">
+                <span id="elements_count">Elementów: 0</span>
+                <span id="chars_count">Znaków: 0</span>
+            </div>
+        </div><br>
+        <div class="box-container" id="box_container">
+        </div>
+    </div>
+    <hr>
+    <button onclick="rngStyles()">Losuj style</button>
+    <div class="view">
+        <div class="ct1">
+            <p>Lalalala</p>
+        </div>
+        <div class="ct2">
+            <p>Lolololo</p>
+        </div>
+        <div class="ct3">
+            <p>Tatatata</p>
+        </div>
+        <h3>Bum bum bum</h3>
+        <h2>Bam bam bam</h2>
+    </div>
+</body>
+</html>
